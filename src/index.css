@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+html{
+  font-size: 80.5%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.rotate-div{
+  box-shadow:1px 15px 8px 1px black;
+  width:1280px;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rotate-upper{
+  position: relative;
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+}
+.upper-1 p{
+  color:#017994;
+  width:80%;
+}
+.upper-2::before{
+  position: absolute;
+  content:"";
+  width:80%;
+  height:100%;
+  top:80px;
+  left:0;
+  background-image: url("https://picsum.photos/seed/picsum/400/300");
+  background-repeat: no-repeat;
+  clip-path: polygon(15% 0, 91% 0, 84% 100%, 0% 100%);
+}
+@keyframes anima {
+  from{
+  background-color: #F08280;
+  }
+  to{
+    background-color: black;
+     box-shadow: 5px 10px 8px 10px #888888;
+  }
+}
+.upper-1{
+  flex:1;
+  color: #017994;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+.upper-2{
+  flex:1;
+  position: relative;
+}
+.rotate-inner{
+  width:100%;
+  height:700px;
+  display: flex;
+  /* padding: auto; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 200px;
+  padding-bottom: 254px;
+  color:white;
+  position: relative;
+}
+.inner-1 h5,p,button{
+  position: relative;
+  color:white;
+  width:70%;
+}
+.inner-1 button{
+  width:40%;
+  box-sizing: border-box;
+  padding-top:2px;
+  padding-bottom: 2px;
+}
+.inner-1{
+  position: relative;
+  flex: 1;
+}
+.inner-2{
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .inner-2  h5,p,button{
+  position: relative;
+  margin-top: 40px; 
+}
+.inner-2 button{
+  width: 40%;
+  box-sizing: border-box;
+  padding-top:2px;
+  padding-bottom: 2px;
+}
+.inner-2::before{
+  position: absolute;
+  content:"";
+  width:100%;
+  height:250px;
+  top: -28px;
+  left:5;
+  margin-right: 15px;
+  background-image: url("https://picsum.photos/400/300?grayscale");
+  clip-path: inset(0 0 0 0);
+}
+.inner-icon{
+  position: absolute;
+  z-index: 999;
+  top:35px;
+  left:-41px;
+}
+.inner-icon .icon-1{
+  background-color: #017994;
+  width:28px;
+  height: 28px;
+  font-weight: lighter;
+  margin-left: 3px;
+  box-sizing: border-box;
+}
+.rotate-lower{
+  position: relative;
+
+}
+.box-1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-color:#F08280;
+width:120px;
+height:50px;
+animation-name: anima;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-direction: reverse;
+color: white;
+left: -48px;
+top: -165px;
+}
+.box-2{
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  left: 43px;
+  animation-name: anima;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-direction: reverse;
+  top: -118px;
+  background-color:#F08280;
+  width:120px;
+  height:50px;
+}
+.inner-3::before{
+  position: absolute;
+  content:"";
+  width:100%;
+  height:250px;
+  top:-99px;
+  left:5;
+  margin-right: 10px;
+  background-image: url("https://picsum.photos/400/300?grayscale");
+  clip-path: inset(0 0 0 0);
+
+}
+.line-1{
+  position: relative;
+  width: 341px;
+    top: -208px;
+    left: -442px;
+  height:2px;
+  animation-name: lineanime;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  background-color:#F08280;
+  transform: rotate(90deg);
+
+}
+@keyframes lineanime {
+  0%{
+background-color: white;
+  }
+  50%{
+   background-color: #F08280;
+  }
+  100%{
+    background-color: #F08280;
+  }
+}
+.line-2{
+  position: relative;
+  width: 320px;
+  top: -40px;
+  left: -273px;
+  animation-name: lineanime1;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  height:3px;
+  background-color:#F08280;
+  transform: rotate(0deg);
+}
+@keyframes lineanime1 {
+  0%{
+width: 0px;
+  }
+ 
+  100%{
+    width: 320px;
+  }
+}
+.line-3{
+  position: relative;
+  width: 226px;
+    top: -142px;
+    animation-name: lineanime2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+    left: -273px;
+  height:3px;
+  background-color:#F08280;
+  transform: rotate(0deg);
+}
+@keyframes lineanime2 {
+  0%{
+width: 0px;
+  }
+  100%{
+    width: 226px;
+  }
+}
+.inner-3{
+  position: relative;
+  flex: 1;
+}
+.line-4{
+  position: relative;
+  height: 2px;
+  width: 131px;
+  top: 36px;
+  animation-name: lineanime4;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  left: 37px;
+  background-color:#F08280;
+  transform: rotate(90deg);
+}
+@keyframes lineanime4 {
+  0%{
+background-color:white;
+  }
+  100%{
+    background-color: #F08280;
+  }
+}
+.rotate-inner::before{
+  position: absolute;
+  content:"";
+  width:100%;
+  height:100%;
+  top: -76px;
+  left: 0;
+  background-color: #F08280;
+  clip-path: polygon(0 10%, 0 56%, 100% 100%, 100% 53%);
+}
+
