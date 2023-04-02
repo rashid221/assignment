@@ -8,7 +8,7 @@ function App() {
     <div className="rotate-div">
       <div className="rotate-upper">
         <div className="upper-1">
-          <h5>Lorem Ipsum</h5>
+          <h5>Assignment</h5>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
