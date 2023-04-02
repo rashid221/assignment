@@ -10,6 +10,7 @@ function App() {
         <div className="upper-1">
           <h5>Assignment Branch</h5>
           <h5>Assignment Update</h5>
+          <h1>Assignment Update</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
